@@ -1,38 +1,188 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap') ;
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background-image: url('./images/backgroundColor.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  cursor: default;
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+select {
+  box-shadow: none;
+  background: yellow;
+  outline: 0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: Satisfy, cursive;
+  font-size: 7rem;
+  text-shadow: 5px 5px 5px #000000d5;
+}
+
+form {margin: 50px 0}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.level-content {
+  display: flex;
+}
+
+.level-content > p {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.text-label {
+  font-size: 1.5rem;
+}
+
+.level-input {
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
+}
+
+.level-input > option {
+  background: none;
+  border: none;
+}
+
+.rgb-color {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 100px 0;
+  text-shadow: 3px 3px 5px #0000009d;
+}
+
+.score {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+.balls-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+}
+
+.balls-content > div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.color-ball {
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #0000009d;
+  cursor: pointer;
+  height: 100px;
+  margin: 0 10px;
+  transition: 300ms;
+  width: 100px;
+}
+
+.color-ball:hover {
+  transform: scale(1.2);
+  transition-duration: 300ms;
+}
+
+.answer {
+  font-size: 1.8rem;
+}
+
+.select-option > p {
+  border-bottom: 2px solid white;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.select-option {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  width: 150px;
+}
+
+.selected {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.selected >img {
+  transition: 500ms;
+}
+
+.options-content {
+  height: 0;
+  overflow-y: hidden;
+  transition: 500ms;
+}
+
+.show {
+  height: 160px;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  transition: 500ms;
+}
+
+.option {
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 5px 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.option:hover {
+  background-color: #454545;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.option > input {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.option >label {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.correct {border: 5px solid green}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.wrong {border: 5px solid red}
