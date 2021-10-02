@@ -82,7 +82,7 @@ form {margin: 50px 0}
 .rgb-color {
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 100px 0;
+  margin: 70px 0;
   text-shadow: 3px 3px 5px #0000009d;
 }
 
@@ -95,7 +95,6 @@ form {margin: 50px 0}
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 15vh;
   justify-content: center;
 }
 
@@ -105,10 +104,13 @@ form {margin: 50px 0}
 }
 
 .color-ball {
+  align-items: center;
   border-radius: 50%;
   box-shadow: 5px 5px 10px #0000009d;
   cursor: pointer;
+  display: flex;
   height: 100px;
+  justify-content: center;
   margin: 0 10px;
   transition: 300ms;
   width: 100px;
@@ -183,6 +185,11 @@ form {margin: 50px 0}
   cursor: pointer;
 }
 
-.correct {border: 5px solid green}
+.balls-content > p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
 
-.wrong {border: 5px solid red}
+.correct {border: 10px solid green}
+
+.wrong {border: 10px solid red}

@@ -57,11 +57,12 @@ function App() {
     const correctColorIndex = randomNumber(ZERO, arrayOfColors.length - ONE);
     setCorrectColor(arrayOfColors[correctColorIndex]);
   }
-
+    
   generateColorOptions(level);
+  
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [level])
-  
+
   const levelOptions = [
     { level: 'easy', text: 'Fácil' },
     { level: 'medium', text: 'Médio' },
@@ -122,6 +123,7 @@ function App() {
           </p>
         )}
         <div className="balls-content">
+          <p className="answer">Escolha uma cor</p>
           <div>
             {
               arrayColors && arrayColors
@@ -139,9 +141,8 @@ function App() {
               ))
             }
           </div>
-          <p className="answer">Escolha uma cor</p>
         </div>
-        <p>{answer}</p>
+        <p className="answer">{answer}</p>
       </main>
     </>
   );

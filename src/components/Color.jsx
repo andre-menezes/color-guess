@@ -1,13 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Color(props) {
   const { red, green, blue, setAnswer, correctColor, disable, setDisable } = props;
   const [imgAnswer, setImgAnswer] = useState('');
+  const [win, setWin] = useState();
+  
+  useEffect(() => {
+    const revealAnswer = () => {
+      if (disable
+          && red === correctColor.red
+          && green === correctColor.green
+          && blue === correctColor.blue
+      ) {
+        setWin('correct');
+      } else {
+        setWin('')
+      }
+    }
+    
+    revealAnswer();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [disable]);
+
   return (
     <div
       style={{ backgroundColor: `rgb(${red}, ${green}, ${blue})` }}
-      className="color-ball"
+      className={`color-ball ${win}`}
       disable={disable}
+      id={imgAnswer}
       onClick={({ target }) => {
         if (!disable) {
           if (
