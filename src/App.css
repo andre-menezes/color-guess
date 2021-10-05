@@ -193,3 +193,12 @@ form {margin: 50px 0}
 .correct {border: 10px solid green}
 
 .wrong {border: 10px solid red}
+
+.reset {
+  background-color: #454545;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+}

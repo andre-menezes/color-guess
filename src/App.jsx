@@ -18,6 +18,7 @@ function App() {
   const [arrayColors, setArrayColors] = useState([]);
   const [answer, setAnswer] = useState('');
   const [disable, setDisable] = useState(false);
+  // const [score, setScore] = useState(0);
 
   const randomNumber = (min, max) => {
     return Math
@@ -68,7 +69,7 @@ function App() {
     { level: 'medium', text: 'Médio' },
     { level: 'hard', text: 'Difícil' },
   ];
-
+  
   return (
     <>
       <header>
@@ -143,6 +144,17 @@ function App() {
           </div>
         </div>
         <p className="answer">{answer}</p>
+        {
+          answer
+            ? <button
+              type="button"
+              className="reset"
+              onClick={() => window.location.reload()}
+            >
+              Reiniciar
+            </button>
+          : null
+        }
       </main>
     </>
   );

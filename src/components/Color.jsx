@@ -27,7 +27,7 @@ export default function Color(props) {
     <div
       style={{ backgroundColor: `rgb(${red}, ${green}, ${blue})` }}
       className={`color-ball ${win}`}
-      disable={disable}
+      disable={disable.toString()}
       id={imgAnswer}
       onClick={({ target }) => {
         if (!disable) {
