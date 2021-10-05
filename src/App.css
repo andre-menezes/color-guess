@@ -190,9 +190,9 @@ form {margin: 50px 0}
   margin: 20px 0;
 }
 
-.correct {border: 10px solid green}
+.correct {border: 10px solid #1FB141}
 
-.wrong {border: 10px solid red}
+.wrong {border: 10px solid #ed3c4d}
 
 .reset {
   background-color: #454545;
