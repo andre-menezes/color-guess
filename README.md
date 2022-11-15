@@ -1,6 +1,7 @@
 # Seja bem-vindo(a) ao projeto Color Guess!
 
 ### Esse projeto é um jogo que consiste em você adivinhar a cor correspondente ao código RGB gerado. Apresenta três níveis de dificuldade, fácil, médio ou difícil.
+O projeto foi construído tendo como base em uma aplicação React, utilizando conceitos de componentização, uso de Hooks e estilização com CSS puro e responsividade.
 
 ---
 
