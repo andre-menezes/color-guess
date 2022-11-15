@@ -46,4 +46,4 @@ Para fazer o build da aplicação, você deve executar o seguinte comando:
 
 ## Para tentar a sorte e se divertir, acesse:
 
-https://andre-menezes.github.io/colorguess
+https://andre-menezes.github.io/color-guess
