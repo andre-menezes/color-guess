@@ -1,6 +1,6 @@
 # Seja bem-vindo(a) ao projeto Color Guess!
 
-### Esse projeto consiste em você adivinhar a cor correspondente ao código RGB gerado.
+### Esse projeto é um jogo que consiste em você adivinhar a cor correspondente ao código RGB gerado. Apresenta três níveis de dificuldade, fácil, médio ou difícil.
 
 ---
 
