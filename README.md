@@ -1,6 +1,6 @@
 # Seja bem-vindo(a) ao projeto Color Guess!
 
-### Esse projeto consiste em você adivinhar a cor correspondente ao código RGB gerado.
+### Esse projeto é um jogo que consiste em você adivinhar a cor correspondente ao código RGB gerado. Apresenta três níveis de dificuldade, fácil, médio ou difícil.
 
 ---
 
@@ -32,7 +32,7 @@ Para instalar as dependências do projeto, no diretório do projeto, você deve 
 
 Para fazer o build da aplicação, você deve executar o seguinte comando:
 
-### `npm build`
+### `npm run build`
 
 ---
 
