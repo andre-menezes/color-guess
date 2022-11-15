@@ -32,7 +32,7 @@ Para instalar as dependências do projeto, no diretório do projeto, você deve 
 
 Para fazer o build da aplicação, você deve executar o seguinte comando:
 
-### `npm build`
+### `npm run build`
 
 ---
 
