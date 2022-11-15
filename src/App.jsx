@@ -10,8 +10,8 @@ function App() {
   const MIN_COLOR_VALUE = ZERO;
   const DEFAULT_LEVEL = 'easy';
   const EASY = 4;
-  const MEDIUM = 7;
-  const HARD = 10;
+  const MEDIUM = 8;
+  const HARD = 12;
   
   const [level, setLevel] = useState(DEFAULT_LEVEL);
   const [correctColor, setCorrectColor] = useState(null);
