@@ -80,7 +80,7 @@ form {margin: 50px 0}
 }
 
 .rgb-color {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin: 70px 0;
   text-shadow: 3px 3px 5px #0000009d;
@@ -146,7 +146,7 @@ form {margin: 50px 0}
   padding: 0 10px;
 }
 
-.selected >img {
+.selected > img {
   transition: 500ms;
 }
 
@@ -181,7 +181,7 @@ form {margin: 50px 0}
   display: none;
 }
 
-.option >label {
+.option > label {
   cursor: pointer;
 }
 
@@ -201,4 +201,44 @@ form {margin: 50px 0}
   cursor: pointer;
   height: 50px;
   width: 150px;
+}
+
+@media (min-width: 650px) and  (max-width: 900px) {
+  header {
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .rgb-color {
+    font-size: 2rem;
+  }
+
+  .color-ball {
+    height: 80px;
+    width: 80px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  header {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .rgb-color {
+    font-size: 1.5rem;
+  }
+
+  .color-ball {
+    height: 50px;
+    width: 50px;
+  }
+
 }
